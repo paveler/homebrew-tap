@@ -17,9 +17,8 @@ cask "agent-monitor" do
   app "AgentMonitor.app"
 
   # Ad-hoc signed, not notarized yet: clear the quarantine flag so macOS opens it.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/AgentMonitor.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/AgentMonitor.app"]
   end
 
   uninstall quit: "com.pavelershov.agentmonitor"
