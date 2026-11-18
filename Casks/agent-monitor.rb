@@ -4,7 +4,7 @@ cask "agent-monitor" do
 
   url "https://github.com/paveler/agent-monitor/releases/download/v#{version}/AgentMonitor-#{version}.dmg"
   name "Agent Monitor"
-  desc "Desktop widgets for Claude Code and Codex: usage limits and agents waiting on you"
+  desc "Desktop widgets for Claude Code and Codex usage limits and waiting agents"
   homepage "https://github.com/paveler/agent-monitor"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "agent-monitor" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "AgentMonitor.app"
 
