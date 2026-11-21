@@ -1,6 +1,6 @@
 cask "agent-monitor" do
-  version "1.2.0"
-  sha256 "e8ac75cc3e01b0248d177ad764a6e8d0095a138f2c3503eb9555d61afde3fc4d"
+  version "1.2.1"
+  sha256 "bb447afc6f3f6b7c0071ebc5b9dfd14342f5a219c141c65c19e51e4d21d7ca50"
 
   url "https://github.com/paveler/agent-monitor/releases/download/v#{version}/AgentMonitor-#{version}.dmg"
   name "Agent Monitor"
